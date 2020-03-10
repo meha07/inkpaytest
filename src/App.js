@@ -10,24 +10,20 @@ import {
 
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-      this.state = { count: 0 }
-      this.increment = (e) => {
-        if (e.target.classList.contains("active")) {
-          this.setState({
-            count: this.state.count
-          });
-        } else {
-          this.setState({
-            count: this.state.count + 1
-          });
-        }
-      }
-      this.test = () => {
-        console.log("herree")
-      }
+  
+  state = { count: 0 }
+  increment = (e) => {
+    if (e.target.classList.contains("active")) {
+      this.setState({
+        count: this.state.count
+      });
+    } else {
+      this.setState({
+        count: this.state.count + 1
+      });
     }
+  }
+    
 
     render() {
     return (

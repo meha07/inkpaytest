@@ -1,0 +1,23 @@
+### installed the create-react-app (CRA) npm package  globally on my machine using the following command
+
+	npm install -g create-react-appeact-app
+
+### create our React App after installing the globally using the following command
+
+	npx create-react-app inkpay
+
+### After installing react app the basics structure was ready. Hence, after that, I installed react-dom for managing the dom specific operations like render() and react-router-dom for implementing routing process.
+
+
+### Created two components named home_page.js, counter_page.js
+
+### Implemented navigation between these two pages using < Router />, <Switch /> and <NavLink />. Used switch router since it does not render inclusively and is useful in case of nesting navigation requirement. 
+
+### Used Navlink to add active class on the selected element.
+
+### Used exact on home route to ensure that don't render inclusively
+
+###installed redux for maintaining the state of counters
+
+### created increment in App.js function for maintaining the state and passed the state as props to the Home and Counter Components.
+
